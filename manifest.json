@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Can I cancel",
+  "version": "1.0",
+  "description": "A an extension to figure out if you can cancel a subscription",
+  "permissions": ["sidePanel", "storage", "scripting", "activeTab", "tabs"],
+  "host_permissions": ["http://*/*", "https://*/*"],  
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": "icon.png",
+    "default_title": "Can i cancel"
+  },
+  "side_panel": {
+    "default_path": "./sidepanel/index.html"
+  }
+}

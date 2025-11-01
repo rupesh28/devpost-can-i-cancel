@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Can i cancel</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="items-center justify-center m-2">
+    <p>
+    <div id="title-div">
+    </div>
+    </p>
+    <div class="p-4 bg-white text-gray-700 text-sm leading-relaxed">
+      <p>Wondering if you can cancel or get a refund? Open any Terms page and find out.</p>
+      <button
+        id="submit-review"
+        class="mt-4 w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-xl shadow transition-all duration-150">
+        Check My Subscription
+      </button>
+    </div>
+  </div>
+  <div id="warning" class="text-red-600 hidden m-2"></div>
+  <div id="llm-loading" class="hidden">
+    <div class="relative scale-75 top-24">
+      <!-- Docs stack -->
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="relative">
+          <div
+            class="absolute -top-6 -left-6 w-[260px] h-[180px] rounded-lg bg-slate-50 border border-slate-200 shadow-sm rotate-[-2deg]">
+          </div>
+          <div
+            class="absolute -top-3 -left-3 w-[260px] h-[180px] rounded-lg bg-white border border-slate-200 shadow-sm rotate-[1deg]">
+          </div>
+          <div
+            class="relative w-[260px] h-[180px] rounded-lg bg-white border border-slate-200 shadow-md overflow-hidden">
+            <div class="h-8 bg-slate-100 border-b border-slate-200"></div>
+            <div class="p-4 space-y-2">
+              <div class="h-2 w-4/5 bg-slate-200 rounded"></div>
+              <div class="h-2 w-2/3 bg-slate-200 rounded"></div>
+              <div class="h-2 w-5/6 bg-slate-200 rounded"></div>
+              <div class="h-2 w-3/5 bg-slate-200 rounded"></div>
+              <div class="h-2 w-11/12 bg-slate-200 rounded"></div>
+              <div class="h-2 w-1/2 bg-slate-200 rounded"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Magnifier -->
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="relative animate-[spin_6s_linear_infinite]">
+          <div class="translate-x-[120px]">
+            <div
+              class="relative w-16 h-16 rounded-full border-4 border-slate-400 bg-white/30 backdrop-blur-sm shadow-md animate-[spin_6s_linear_infinite] [animation-direction:reverse]">
+              <div class="absolute inset-1 rounded-full ring-1 ring-slate-300/60"></div>
+              <div class="absolute left-2 top-2 w-5 h-5 rounded-full bg-white/50 blur-[2px]"></div>
+              <div class="absolute -right-3 -bottom-5 w-2 h-10 bg-slate-400 rounded-full rotate-45 shadow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-32 left-1/2 -translate-x-1/2 text-sm text-slate-500 tracking-wide">
+        Taking a closer look. This can take a few..
+      </div>
+    </div>
+  </div>
+  <div class="card" id="result-summary">
+  </div>
+  <script src="title-render.js"></script>
+  <script src="terms-table.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
